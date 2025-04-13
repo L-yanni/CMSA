@@ -1,0 +1,20 @@
+# config.yaml
+
+training:
+  epochs: 300
+  batch_size: 64
+  learning_rate: 0.001
+  attention_heads: 4
+  num_classes: 3
+  feature_dim: 512
+  dropout: 0.3
+  early_stopping_patience: 15
+  seed: 42
+
+paths:
+  train_features: 'dataset/train/10-CLIP-alignment_features.pkl'
+  val_features: 'dataset/val/10-CLIP-alignment_features.pkl'
+  test_features: 'dataset/test/10-CLIP-alignment_features.pkl' 
+  model_save_path: 'best_model--10--1+2.pth'
+
+device: 'cuda'  # 或 'cpu'
